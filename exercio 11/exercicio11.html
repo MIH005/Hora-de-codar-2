@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercico 10</title>
+</head>
+<body>
+    <h2>calculadora</h2>
+    <p id="resultado"></p>
+
+    <script>
+        /* 11. Uma micro calculadora
+        Escreva um programa para ler 2 valores inteiros informados pelo usuário e 
+         das seguintes operações a 
+        serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
+        O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. 
+        Observação: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações */ 
+
+        var num1 = parseFloat(prompt("Digite um número"));
+        var num2 = parseFloat(prompt("Digite um número"));
+        var operacao = parseInt(prompt("Escolha: \n 1.Adição \n 2.Subtração  \n 3.Divisão  \n  4.Multiplicação \n"));
+    
+        let text = "";
+    
+        switch (operacao) {
+        case 1:
+                var adicao = num1 + num2;
+                text = adicao;
+            break;
+        case 2:
+            var subtracao = num1 - num2;
+            text = subtracao;
+            break;
+        case 3:
+            var divisao = num1 / num2;
+            text = divisao;
+            break;
+        case 4:
+            var multiplicacao = num1 * num2;
+            text = multiplicacao;
+            break;
+        }
+        document.getElementById("resultado").innerHTML = "O resultado foi de: " + text;
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercico 6</title>
+</head>
+<body>
+    <h2>Media de valores</h2>
+
+    <p id="resultado"></p>
+    <script>
+        /* 6. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, 
+        o último e o maior de todos eles (considere que todos os 
+        números informados serão diferentes)*/
+
+        var numeros = [];
+        let text = "";
+        var l = 4;
+
+        for(i=0 ; i < l; i++){
+            var numUsuario = parseInt(prompt("Digite um número: "));
+            numeros.push(numUsuario);
+        }
+        var maiorNumero = Math.max(...numeros);
+        
+        text += "O Primeiro número é: " + numeros[0] + "<br>" + "O ultimo número é: " + numeros[3] + "<br>" + "O maior número é: " + maiorNumero;
+       document.getElementById("resultado").innerHTML = text;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#elementos{
+    background-color: darkgray;
+    justify-content: center;
+    padding: 20vh;
+}
+button, input{
+    padding: 10px;
+    border-radius: 5px;
+}

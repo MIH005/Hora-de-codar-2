@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: arial, sans-serif;
+}
+
+#num1, #num2, #num3, #verificar{
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: 2vh  5vh;
+    text-align: center;
+}
+#resultado{
+    font-size: 20px;
+}

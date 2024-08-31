@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <h1>Validar Voto - Você já pode votar?</h1>
+    <p id="resultado"></p>
+
+    <script>
+        /* 9. Escreva um programa para ler o ano de nascimento 
+        de uma pessoa e escrever uma mensagem que diga 
+        se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+        */
+
+        let text = "";
+        var ano_nasc = parseInt(prompt("Digite seu ano de nascimento: "));
+        
+        validar_voto = 2024 - ano_nasc;
+
+        if(validar_voto >= 18){
+            text = "Você pode votar! Você tem " + validar_voto + " anos.";
+        }
+        else{
+            text = "Você não pode votar! Você tem " + validar_voto + " anos.";
+        }
+
+        document.getElementById("resultado").innerHTML = text;
+
+    </script>
+</body>
+</html>

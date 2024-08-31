@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <h1>Passou no teste?</h1>
+    <p id="resultado"></p>
+    <script>
+        /* 8. Escreva um programa que calcule a média de quatro números informados pelo usuário, 
+        mas somente se esses números forem maiores que 0 e menores que 10. No final, 
+        se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". 
+        Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+    
+        */
+
+        var numeros = [];
+        var l = 4;
+        var soma = 0;
+        let text = "";
+
+        for(i=0; i < l; i++){
+            var numUsuario = parseInt(prompt("Digite um número: "));
+           
+            if(numUsuario > 0 && numUsuario < 10){
+                soma += numUsuario;
+                numeros.push(numUsuario);
+            }
+            else{
+                alert("Número invalidado! Digite um número menor que 10 ou maior que 0.")
+                i--;
+            }
+        }
+
+        var media = soma / l;
+
+        if(media > 5){
+            text = "Você passou no teste! Media de: " + media;
+        }
+        else{
+            text = "Tente novamente! Media foi de: " + media;
+        }
+
+        document.getElementById("resultado").innerHTML = text;
+    </script>
+</body>
+</html>

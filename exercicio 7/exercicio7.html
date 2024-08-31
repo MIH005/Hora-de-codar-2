@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <h1>Percorrendo lista</h1>
+    <p id="resultado"></p>
+    <script>
+        /* 7. Faça um programa que leia 6 números que o usuário vai informar. 
+        Todos os números lidos com valor inferior a 72 devem ser somados. 
+        Escreva o valor final da soma efetuada e também todos valores que o usuário informou. */
+
+        var numeros = [];
+        var l = 6;
+        var soma = 0;
+        let text = "";
+
+        for(let i=0; i < l; i++){
+            var numUsuario = parseInt(prompt("Digite um número: "));
+            numeros.push(numUsuario);
+        }
+
+        for(let i = 0; i < numeros.length; i++){
+            if(numeros[i] < 72){
+                soma += numeros[i]; 
+            }
+        }
+
+        text += "Os valores digitados: " + numeros + "<br>" + "A soma dos números foi: " + soma;
+        document.getElementById("resultado").innerHTML = text;
+    </script>
+</body>
+</html>

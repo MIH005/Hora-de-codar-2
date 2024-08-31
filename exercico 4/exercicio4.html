@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerccio 4</title>
+</head>
+<body>
+    <script>
+        var num1 = parseInt(prompt("Digite um número: "));
+        var num2 = parseInt(prompt("Digite um número: "));
+        var num3 = parseInt(prompt("Digite um número"));
+
+        if(num1 < num2 && num1 < num3){
+            var calc = num2 + num3;
+            alert("A soma dos maiores números é: " + calc);
+        }
+        else if(num2 < num1 && num2 < num3){
+            var calc2 = num1 + num3;
+            alert("A soma dos maiores números é: " + calc2);
+        }
+        else if(num3 < num1 && num3 < num2){
+            var calc3 = num1 + num2;
+            alert("A soma dos maiores números é: " + calc3);
+        }
+
+    </script>
+</body>
+</html>
